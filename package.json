@@ -1,0 +1,23 @@
+{
+  "name": "similarity-paper-title",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hareeqi/similarity-paper-title.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hareeqi/similarity-paper-title/issues"
+  },
+  "homepage": "https://github.com/hareeqi/similarity-paper-title#readme",
+  "dependencies": {
+    "similarity": "^1.1.1",
+    "string-similarity": "^1.2.0"
+  }
+}
