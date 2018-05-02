@@ -27,12 +27,12 @@ log(`\n\n\nStarting the scan using ${algorthim_name} algorthim\n\n\n`);
 const start_time = Date.now()
 
 for (let i = 0 ; i < list.length ; i++) {
-  for (let j = 0 ; j < list.length ; j++) {
+  for (let j = i ; j < list.length ; j++) {
     if (i !== j && !found[i][j] && !found[j][i] ){
       let score = compare(list[i],list[j])
+      found[i][j]=true
       if(score > threshold ){
         total_match++
-        found[i][j]=true
         log(`Line ${i+1} : ${list[i]}`)
         log(`Line ${j+1} : ${list[j]}`)
         log(`Score: ${score*100}`);
